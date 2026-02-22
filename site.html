@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopper App</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="scroll-track d-flex">
+    <span>All india free shipping</span>
+    <span>24/7 support</span>
+    <span>Easy returns</span>
+    <span>Limited offers</span>
+  </div>
+</div>
+ 
+
+<!-- NAVBAR -->
+<div class="nav">
+<nav>
+<div class="nav-item">
+
+<!-- HAMBURGER -->
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+
+<!-- MENU LINKS -->
+<div class="menu-links" id="menuLinks">
+<a class="a">Home</a>
+<a class="a">Collections</a>
+<a class="a">New Arrivals</a>
+<a class="a">About</a>
+<a class="a">Contact</a>
+<a class="a" data-bs-toggle="modal" data-bs-target="#loginModal">Login/Register</a>
+</div>
+
+<!-- ICONS (RIGHT) -->
+<div class="nav-icons">
+
+<div class="search-container">
+<label for="searchBox" class="search-icon">
+<i class="bi bi-search"></i>
+</label>
+<input id="searchBox" placeholder="Search...">
+</div>
+
+<i class="bi bi-heart icons"></i>
+<i class="bi bi-cart-plus icons"></i>
+
+</div>
+
+</div>
+</nav>
+</div>
+
+
+<!-- LOGIN MODAL -->
+<div class="modal fade" id="loginModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+
+      <h5>Register</h5>
+      <input class="form-control mb-2" placeholder="Name">
+      <input class="form-control mb-2" placeholder="Email">
+      <input class="form-control mb-2" placeholder="Password">
+      <button class="btn btn-danger w-100 mb-3" data-bs-dismiss="modal">Register</button>
+
+      <h5>Login</h5>
+      <input class="form-control mb-2" placeholder="Email">
+      <input class="form-control mb-2" placeholder="Password">
+      <button class="btn btn-success w-100" data-bs-dismiss="modal">Login</button>
+
+    </div>
+  </div>
+</div>
+
+<!-- MAIN PRODUCT IMAGE -->
+
+
+  <!-- Product thumbnails -->
+  <div class="allignment">
+
+  <img src="https://stories.diademstore.com/assets/image/Webstory-6.jpg" class="product-img" data-bs-toggle="modal" data-bs-target="#product1">
+
+  <img src="https://i.pinimg.com/736x/92/fc/dc/92fcdc7b30a4963536623dc514734f64.jpg"class="product-img" data-bs-toggle="modal" data-bs-target="#product2">
+
+  <img src="https://i.pinimg.com/736x/28/59/23/28592374c8ae12e8a2267bf219a30eb5.jpg" class="product-img" data-bs-toggle="modal" data-bs-target="#product3">
+
+  <img src="https://i.pinimg.com/736x/07/3d/a6/073da6435c0b90891c3457f3696b7fad.jpg" class="product-img" data-bs-toggle="modal" data-bs-target="#product4">
+
+</div>
+
+
+
+
+<!-- ONE modal only -->
+<div class="modal fade" id="product1">
+ <div class="modal-dialog modal-lg modal-dialog-centered">
+
+    <div class="modal-content">
+
+      <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/736x/26/91/23/269123dcddc7b202ad69855934ab3bde.jpg" class="d-block w-100">
+          </div>
+
+         
+
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/8d/6d/6e/8d6d6ef21e0d105824e0815131f1d6a9.jpg"class="d-block w-100">
+          </div>
+           <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/00/f1/15/00f11530034284f81fd3eb9e1054848f.jpg" class="d-block w-100">
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#carousel1" data-bs-slide="prev"></button>
+        <button class="carousel-control-next" data-bs-target="#carousel1" data-bs-slide="next"></button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="product2">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/736x/92/fc/dc/92fcdc7b30a4963536623dc514734f64.jpg" class="d-block w-100">
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/43/bd/57/43bd578e4add74056dbd7cc9aef98edf.jpg" class="d-block w-100">
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/c6/d3/2b/c6d32b5013beed3b3e119476475d964a.jpg" class="d-block w-100">
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#carousel2" data-bs-slide="prev"></button>
+        <button class="carousel-control-next" data-bs-target="#carousel2" data-bs-slide="next"></button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="product3">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/736x/28/59/23/28592374c8ae12e8a2267bf219a30eb5.jpg"class="d-block w-100">
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/44/1d/41/441d41a1901ce3def6737ae947fd2a6d.jpg" class="d-block w-100">
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/ad/91/60/ad916018653f33fd582a663527b2df7d.jpg"class="d-block w-100">
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#carousel3" data-bs-slide="prev"></button>
+        <button class="carousel-control-next" data-bs-target="#carousel3" data-bs-slide="next"></button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="product4">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/736x/07/3d/a6/073da6435c0b90891c3457f3696b7fad.jpg" class="d-block w-100">
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/9b/00/74/9b00740c5ac14d483618ab6e9bf5b168.jpg" class="d-block w-100">
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/82/80/36/828036d2e413156dc6e4525c88aeb58d.jpg" class="d-block w-100">
+          </div>
+           
+
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#carousel4" data-bs-slide="prev"></button>
+        <button class="carousel-control-next" data-bs-target="#carousel4" data-bs-slide="next"></button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- PRODUCT CARDS -->
+<section class="products">
+
+  <div class="product-card">
+    <img src="https://i.pinimg.com/736x/01/aa/91/01aa91d8c8f60e0444bf075480ffff46.jpg">
+    <h4>Silk Saree</h4>
+    <p>₹1,999</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://i.pinimg.com/736x/8e/17/4e/8e174ead7806aea9836bf173e822e8d8.jpg">
+    <h4>Designer Dress</h4>
+    <p>₹2,499</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://i.pinimg.com/736x/e8/f3/75/e8f375ff5df16db09a9a90575719be2b.jpg">
+    <h4>Casual Wear</h4>
+    <p>₹1,299</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://i.pinimg.com/736x/14/53/98/145398647b5b3743f9467cc1b0edeb93.jpg">
+    <h4>Party Saree</h4>
+    <p>₹2,999</p>
+    <button>Add to Cart</button>
+  </div>
+ 
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+  <!-- Top text -->
+  <div class="footer-row-1">
+    <div class="footer-title">Want style Ideas and Treats?</div>
+
+    <div class="subscribe-row">
+      <input type="email" placeholder="Enter your email" required>
+      <button>Subscribe</button>
+    </div>
+  </div>
+
+  <!-- Bottom sections -->
+  <div class="footer-row-2">
+
+    <aside>
+      <div class="footer-title">Shopper</div>
+      <div class="social-icons">
+        <span class="bi bi-facebook"></span>
+        <span class="bi bi-twitter"></span>
+        <span class="bi bi-instagram"></span>
+        <span class="bi bi-youtube"></span>
+      </div>
+    </aside>
+
+    <div>
+      <span class="service-title">SUPPORT</span>
+      <span>Contact Us</span>
+      <span>FAQs</span>
+      <span>Size Guide</span>
+      <span>Shipping & Returns</span>
+    </div>
+
+    <div>
+      <span class="service-title">SHOP</span>
+      <span>Men's Shopping</span>
+      <span>Women's Shopping</span>
+      <span>Kids' Shopping</span>
+      <span>Discounts</span>
+    </div>
+
+    <div>
+      <span class="service-title">COMPANY</span>
+      <span>Our Story</span>
+      <span>Careers</span>
+      <span>Terms & Conditions</span>
+      <span>Privacy & Cookie policy</span>
+    </div>
+
+    <div>
+      <span class="service-title">CONTACT</span>
+      <address>
+        <span>1-202-555-0105</span>
+        <span>1-202-555-0106</span>
+        <span>help@shopper.com</span>
+      </address>
+    </div>
+
+  </div>
+
+</footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
